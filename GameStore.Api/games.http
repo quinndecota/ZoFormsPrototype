@@ -1,0 +1,28 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+###
+GET http://localhost:5237/games/
+###
+
+POST http://localhost:5237/games
+Content-Type: application/json
+
+{
+  "name": "Minecraft",
+  "genre": "Adventure",
+  "price": 27.0,
+  "releaseDate": "2015-01-15"
+}
+###
+PUT http://localhost:5237/games/4
+Content-Type: application/json
+
+{
+
+  "name": "Minecraft",
+  "genre": "Survival",
+  "price": 27.0,
+  "releaseDate": "2011-01-15"
+}
+
+###
+DELETE http://localhost:5237/games/4
