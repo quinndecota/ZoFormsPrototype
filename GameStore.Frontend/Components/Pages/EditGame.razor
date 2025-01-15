@@ -5,13 +5,18 @@
 @inject GamesClient GamesClient
 @inject GenresClient GenresClient
 
+@rendermode InteractiveServer
 
 <PageTitle>@title</PageTitle>
 <h3>@title</h3>
 
 @if(genres is null || game is null){
     <p><em>Loading...</em></p>
-}else{
+}
+else
+{
+
+
 <div class="row">
     <div class="col-md-4">
         <EditForm Model="@game" FormName="editGame" OnValidSubmit="HandleSubmit">
