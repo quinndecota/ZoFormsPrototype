@@ -1,11 +1,13 @@
 using System;
+using System.Net.Http;
+
 using GameStore.Frontend.Models;
 
 namespace GameStore.Frontend.Clients;
 
-public class GenresClient
+public class GenresClient(HttpClient httpsClient)
 {
-    private readonly Genre[] genres = 
+    /*private readonly Genre[] genres = 
     [
         new(){
             Id=1,
@@ -67,7 +69,9 @@ public class GenresClient
             Id=15,
             Name = "Survival"
         }
-    ];
+    ];*/
 
-    public Genre[] GetGenres() => genres;
+    public async Task<Genre[]> GetGenresAsync() => 
+        await httpsClient.GetFromJsonAsync<Genre[]>("genres") ?? [];
+
 }

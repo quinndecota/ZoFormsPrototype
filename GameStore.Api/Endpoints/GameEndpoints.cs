@@ -24,11 +24,13 @@ namespace GameStore.Api.Endpoints
 
 
 //GET /games
-            group.MapGet("/", async (GameStoreContext dbContext) =>
-                await dbContext.Games.Include(Game => Game.Genre)
+            group.MapGet("/", async (GameStoreContext dbContext) => {
+
+                return await dbContext.Games.Include(Game => Game.Genre)
                     .Select(game => game.ToGameSummaryDTO())
                     .AsNoTracking()
-                    .ToListAsync());
+                    .ToListAsync();
+            });
 
 //GET /games/xxx
             group.MapGet("/{id}", async (int id, GameStoreContext dbContext) => {
