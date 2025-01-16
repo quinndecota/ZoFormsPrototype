@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZoForms.Frontend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82cc916fafd26b279790235269f35162fd738554")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c761d4fc65ae9e852593974c6861a73cd480775")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZoForms.Frontend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZoForms.Frontend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
