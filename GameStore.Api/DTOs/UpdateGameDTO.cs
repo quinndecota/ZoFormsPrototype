@@ -2,7 +2,8 @@
 {
     public record class UpdateGameDTO(
         string Name,
-        string Genre,
+        int GenreId,
         decimal Price,
-        DateOnly ReleaseDate);
+        DateOnly ReleaseDate
+    );
 }

@@ -8,21 +8,21 @@ Content-Type: application/json
 
 {
   "name": "Minecraft",
-  "genre": "Adventure",
+  "genreId": 3,
   "price": 27.0,
   "releaseDate": "2015-01-15"
 }
 ###
-PUT http://localhost:5237/games/4
+PUT http://localhost:5237/games/5
 Content-Type: application/json
 
 {
 
-  "name": "Minecraft",
-  "genre": "Survival",
+  "name": "ff XIV",
+  "genreId": 1,
   "price": 27.0,
   "releaseDate": "2011-01-15"
 }
 
 ###
-DELETE http://localhost:5237/games/4
+DELETE http://localhost:5237/games/2
