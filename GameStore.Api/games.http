@@ -1,6 +1,12 @@
 # For more info on HTTP files go to https://aka.ms/vs/httpfile
 ###
 GET http://localhost:5237/games/
+
+###
+GET http://localhost:5237/genres/
+
+
+
 ###
 
 POST http://localhost:5237/games
